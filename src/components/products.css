@@ -106,9 +106,6 @@ article.product{
 .shoppingCart{
   width:30%;
   padding: 20px;
-  /* background-color: #eefdff; */
-  /* margin-left:20px; */
-  /* border:1px solid #ccc; */
 }
 
 .shoppingCart ul{
@@ -128,10 +125,8 @@ article.product{
 }
 
 .cartObject{
-  /* background-color: aliceblue; */
   padding:0px;
   margin-bottom:10px;
-  /* border-bottom:1px solid #ccc; */
   border:1px solid #ccc;
 }
 
@@ -172,7 +167,6 @@ article.product{
 
 /***** Search ****/
 
-
 .search {
   width: 100%;
   position: relative;
@@ -180,27 +174,19 @@ article.product{
   margin-bottom:15px;
 }
 
-.search input {
-  width:40%;
+.search form, .search input {
+ width: 50%;
 }
 
-/* .searchTerm {
-  width: 100%;
-  border: 3px solid #01515a;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-} */
+.search input {
+  padding:8px;
+}
 
 .searchTerm:focus{
   color: #073136;
 }
 
 .searchButton {
-  /* width: 40px; */
   height: 36px;
   border: 1px solid #01515a;
   background: #01515a;
@@ -209,16 +195,8 @@ article.product{
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   padding:5px;
-  /* font-size: 20px; */
 }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+
 
 

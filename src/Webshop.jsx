@@ -1,16 +1,16 @@
-// import './App.css';
 import React from 'react';
 import { useState } from 'react';
-import ProductListComponent from './components/ProductListComponent.jsx';
+// import products from './data/products.json';
 import SearchComponent from './components/SearchComponent.jsx';
+import ProductListComponent from './components/ProductListComponent.jsx';
 import CartComponent from './components/CartComponent.jsx';
 
 
 function Webshop() {
-  const [cart, setCart] = useState({}); //Updates the state (cart using setCart
+  const [cart, setCart] = useState({});
+  const [searchQuery, setSearchQuery] = useState('');
   const totalSum = Object.values(cart).reduce((acc, item) => acc + item.sum, 0);
- 
- 
+
   function handleAddToCart(productId, productInfo) {
     setCart(prevCart => { 
    
@@ -47,12 +47,13 @@ function Webshop() {
     });
   }
 
+
   return (
     <main>
       <h1>Magic store</h1>  
-      <SearchComponent />
+      <SearchComponent searchQuery={searchQuery} onSearch={setSearchQuery} />
       <div className="wrapper">
-        <ProductListComponent onAddToCart={handleAddToCart} />
+        <ProductListComponent onAddToCart={handleAddToCart} searchQuery={searchQuery} />
         <CartComponent cart={cart} onRemove={handleRemoveFromCart} totalSum={totalSum}/>
       </div>
     </main>

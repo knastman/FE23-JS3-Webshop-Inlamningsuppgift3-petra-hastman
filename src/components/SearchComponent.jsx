@@ -1,34 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './products.css';
-// import ProductComponent from './ProductComponent.jsx';
 
+export default function SearchComponent({ onSearch }) {
+  const [searchQuery, setSearchQuery] = useState('');
 
-export default function SearchComponent() {
-
-  const [inputText, setInputText] = useState("");
-  let inputHandler = (e) => {
-    //convert input text to lower case
-    var lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(searchQuery); 
   };
 
   return(
-    <>    
-      <section className="search">
-        <input type="text" />
+    <section className="search">
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
         <button type="submit" className="searchButton">search</button>
-      </section>
-      <section className="resultList">
-        <h2>Search result</h2>
-        {/* <ProductComponent /> */}
-      </section>
-      <section>
-        <h2>Search result list</h2>
-        <List input={inputText} />
-      </section>
-    </>
-
+      </form>
+    </section>
   );
-
 }
+
 

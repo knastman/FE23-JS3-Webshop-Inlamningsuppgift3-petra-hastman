@@ -1,6 +1,3 @@
-# FE23-JS3-Webshop-Inlamningsuppgift3-petra-hastman
-
-
 # Inlämningsuppgift 3 - Javascript 3 React - Webshop 
 
 #### Projekt på utbildningen:
