@@ -1,5 +1,3 @@
-
-// import React from 'react';
 import React, { useState } from 'react';
 
 
@@ -22,6 +20,7 @@ function ProductCardComponent({ product, onAddToCart, showButton }) {
           <p onClick={toggleModal} className="info-link">More information</p>
         </div>
 
+        
         {isVisible && (
           <div className="modalpopup" id="productModal" onClick={toggleModal}>
             <p>{product.description}</p>
