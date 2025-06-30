@@ -20,11 +20,6 @@ function Webshop() {
         product: productInfo 
       };
 
-      const newItem = {
-        ...existing,
-        count: existing.count + 1,
-        sum: existing.sum + productInfo.price,
-      };
     
       return {
         ...prevCart, 
