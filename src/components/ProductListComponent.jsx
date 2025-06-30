@@ -4,10 +4,11 @@ import products from '../data/products.json';
 import ProductCardComponent from "./ProductCardComponent";
 
 function ProductListComponent({ onAddToCart, searchQuery }) {
-  const filteredProducts = products.filter(product =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
 
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    product.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <section className="product-list">

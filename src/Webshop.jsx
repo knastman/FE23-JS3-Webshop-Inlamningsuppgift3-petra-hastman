@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-// import products from './data/products.json';
 import SearchComponent from './components/SearchComponent.jsx';
 import ProductListComponent from './components/ProductListComponent.jsx';
 import CartComponent from './components/CartComponent.jsx';
