@@ -1,0 +1,72 @@
+[
+  {
+    "productId": 101,
+    "name": "Basic White T-Shirt",
+    "price": 100,
+    "description": "A clean, soft cotton t-shirt for everyday wear. Great for layering or wearing alone.",
+    "imgUrl": "./productimage1.jpg"
+  },
+  {
+    "productId": 102,
+    "name": "Comfort Fit Jeans",
+    "price": 200,
+    "description": "Relaxed-fit jeans made from durable denim. Perfect for casual outings or workdays.",
+    "imgUrl": "./productimage2.jpg"
+  },
+  {
+    "productId": 103,
+    "name": "Bluetooth Earbuds",
+    "price": 120,
+    "description": "Wireless earbuds with noise reduction and crisp sound. Includes charging case.",
+    "imgUrl": "./productimage3.jpg"
+  },
+  {
+    "productId": 104,
+    "name": "Silk Hair Serum",
+    "price": 345,
+    "description": "Nourishing serum for dry or frizzy hair. Leaves your hair soft and shiny.",
+    "imgUrl": "./productimage4.jpg"
+  },
+  {
+    "productId": 105,
+    "name": "Smartwatch Lite",
+    "price": 899,
+    "description": "Track your steps, heart rate, and notifications with this sleek and affordable smartwatch.",
+    "imgUrl": "./productimage5.jpg"
+  },
+  {
+    "productId": 106,
+    "name": "Wireless Keyboard",
+    "price": 499,
+    "description": "Compact Bluetooth keyboard with silent keys and rechargeable battery.",
+    "imgUrl": "./productimage6.jpg"
+  },
+  {
+    "productId": 107,
+    "name": "Everyday Hoodie",
+    "price": 550,
+    "description": "A cozy hoodie made from a soft cotton blend. Comes with a kangaroo pocket and drawstring hood.",
+    "imgUrl": "./productimage7.jpg"
+  },
+  {
+    "productId": 108,
+    "name": "Vitamin C Face Cream",
+    "price": 279,
+    "description": "Brightening face cream that hydrates and evens out skin tone.",
+    "imgUrl": "./productimage8.jpg"
+  },
+  {
+    "productId": 109,
+    "name": "Noise Cancelling Headphones",
+    "price": 999,
+    "description": "Over-ear headphones with powerful noise cancellation and 20-hour battery life.",
+    "imgUrl": "./productimage9.jpg"
+  },
+  {
+    "productId": 110,
+    "name": "Casual Sneakers",
+    "price": 650,
+    "description": "Lightweight sneakers perfect for walking, running errands, or casual wear.",
+    "imgUrl": "./productimage10.jpg"
+  }
+]
