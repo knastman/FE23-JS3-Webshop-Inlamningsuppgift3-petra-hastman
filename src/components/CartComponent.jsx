@@ -16,7 +16,7 @@ function CartComponent({ cart, onRemove, totalSum }) {
                 
                 <div className="cart-item">
                   <div> 
-                    <img src={item.product.imgUrl} width="100px"/>
+                    <img src={item.product.imgUrl} width="100px" alt="Product"/>
                   </div>
                   <div>
                   <h3>{item.product.name}</h3>

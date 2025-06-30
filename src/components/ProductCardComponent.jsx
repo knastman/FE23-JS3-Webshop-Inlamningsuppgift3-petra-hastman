@@ -13,7 +13,7 @@ function ProductCardComponent({ product, onAddToCart, showButton }) {
     <article className="product" id={product.productId}>
       <div className="product-info-left">
         <div>
-          <img src={product.imgUrl} width="100px" alt='Product Image' />
+          <img src={product.imgUrl} width="100px" alt='Product' />
         </div>
         <div>
           <h2>{product.name}</h2>
