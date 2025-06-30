@@ -7,13 +7,13 @@
 #### Kurs
 FE23 | JavaScript 3
 
+#### Deploy på netlify
+https://js3webshop.netlify.app/
+
 ___
 
 ## Uppgiften
 
 ### Applikation "Webshop"
 I denna inlämningsuppgift ska du utveckla en enkel webbshop. Du kommer inte att använda något
-backend, detta kommer du att simulera i uppgiften. Du kommer att skapa ett antal olika komponenter
-med React och bygga ett dynamiskt webbgränssnitt i en Single Page Application. Du kommer
-dessutom att deploya din applikation.
-I
+backend, detta kommer du att simulera i uppgiften. Du kommer att skapa ett antal olika komponenter med React och bygga ett dynamiskt webbgränssnitt i en Single Page Application. Du kommer dessutom att deploya din applikation.
