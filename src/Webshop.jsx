@@ -8,7 +8,6 @@ import CartComponent from './components/CartComponent.jsx';
 function Webshop() {
   const [searchQuery, setSearchQuery] = useState('');
   const [cart, setCart] = useState({});
-  const totalSum = Object.values(cart).reduce((acc, item) => acc + item.sum, 0);
 
   function handleAddToCart(productId, productInfo) {
     setCart(prevCart => { 
@@ -48,7 +47,7 @@ function Webshop() {
       <SearchComponent searchQuery={searchQuery} onSearch={setSearchQuery} />
       <div className="wrapper">
         <ProductListComponent onAddToCart={handleAddToCart} searchQuery={searchQuery} />
-        <CartComponent cart={cart} onRemove={handleRemoveFromCart} totalSum={totalSum}/>
+        <CartComponent cart={cart} onRemove={handleRemoveFromCart} />
       </div>
     </main>
   );

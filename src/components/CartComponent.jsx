@@ -1,7 +1,9 @@
 import React from 'react';
 import './products.css';
 
-function CartComponent({ cart, onRemove, totalSum }) {
+function CartComponent({ cart, onRemove }) {
+  const totalSum = Object.values(cart).reduce((acc, item) => acc + item.sum, 0);
+
   return (
     <section className="shoppingCart">
       <h2>Shopping Cart</h2>
@@ -10,7 +12,7 @@ function CartComponent({ cart, onRemove, totalSum }) {
         {Object.keys(cart).length === 0 ? (
           <p>Your cart is empty.</p>
         ) : (
-          <ul className="extra"> 
+          <ul> 
             {Object.entries(cart).map(([productId, item]) => (
               <li key={productId} className="cartObject">
                 
@@ -19,7 +21,7 @@ function CartComponent({ cart, onRemove, totalSum }) {
                     <img src={item.product.imgUrl} width="100px" alt="Product"/>
                   </div>
                   <div>
-                  <h3>{item.product.name}</h3>
+                    <h3>{item.product.name}</h3>
                     <p>Price: {item.product.price} SEK</p>
                     <p>Quantity: {item.count}</p>
                     <p>Total: {item.sum} SEK</p> 
