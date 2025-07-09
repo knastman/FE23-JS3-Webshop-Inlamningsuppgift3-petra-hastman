@@ -6,8 +6,8 @@ import CartComponent from './components/CartComponent.jsx';
 
 
 function Webshop() {
-  const [cart, setCart] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
+  const [cart, setCart] = useState({});
   const totalSum = Object.values(cart).reduce((acc, item) => acc + item.sum, 0);
 
   function handleAddToCart(productId, productInfo) {

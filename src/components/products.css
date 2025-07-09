@@ -6,11 +6,8 @@
 
 html {
   font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color:var(--mainTextColor);
-  background-color: #f5f5f5;
 }
 
 h1, h2, h3, h4 {
@@ -87,7 +84,7 @@ article.product{
 
 .modalpopup{
   /* display:none; */
-  background-color: rgb(156, 212, 229);
+  background-color: rgb(214, 245, 255);
   padding: 15px;
   margin:10px auto;
   position: absolute;
@@ -141,8 +138,8 @@ article.product{
   display: flex;
   flex-wrap: nowrap;
   gap:15px;
-
 }
+
 .cart-item div:nth-child(3){
   align-content:center;
   padding-right:5px;
@@ -150,9 +147,10 @@ article.product{
   flex-grow: 3;
 }
 
-.cart-item button{
+button{
   padding:8px 12px;
 }
+
 
 .cart-info{
   padding:15px 0 15px 0;

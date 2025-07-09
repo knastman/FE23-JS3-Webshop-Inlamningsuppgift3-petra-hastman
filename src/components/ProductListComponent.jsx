@@ -13,7 +13,6 @@ function ProductListComponent({ onAddToCart, searchQuery }) {
   return (
     <section className="product-list">
       <h2>Products</h2>
-      {/* {products.map(product => ( */}
       {filteredProducts.map(product => (
         <ProductCardComponent key={product.productId} product={product} onAddToCart={onAddToCart} showButton={true}/>
       ))}
